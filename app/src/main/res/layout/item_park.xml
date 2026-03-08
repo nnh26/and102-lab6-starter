@@ -10,13 +10,12 @@
     <ImageView
         android:id="@+id/itemParkImage"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="120dp"
         android:contentDescription="Park Image"
         android:scaleType="centerCrop"
         android:layout_marginEnd="12dp"
         app:layout_constraintWidth_percent="0.35"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Park Title -->
@@ -32,21 +31,21 @@
         android:ellipsize="end"
         android:maxLines="2"
         app:layout_constraintStart_toEndOf="@id/itemParkImage"
-        app:layout_constraintTop_toTopOf="@id/itemParkImage"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Park Description -->
     <TextView
         android:id="@+id/itemParkDescription"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
         android:text="Park description..."
         android:textSize="14sp"
         android:textColor="@android:color/darker_gray"
         android:ellipsize="end"
         android:lineSpacingExtra="2dp"
-        android:maxLines="5"
         app:layout_constraintStart_toEndOf="@id/itemParkImage"
         app:layout_constraintTop_toBottomOf="@id/itemParkTitle"
         app:layout_constraintBottom_toBottomOf="@id/itemParkImage"
